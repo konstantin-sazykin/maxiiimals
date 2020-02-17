@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- normlize.css -->
+    <link rel="stylesheet" href='./css/normalize.css'>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Реклама в вашем городе</title>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="circle circle_small"></div>
+        <div class="circle circle_big"></div>
+        <div class="header-banner">
+            <img src="./img/header_banner.png" alt="" class="header-banner__img">
+        </div>
+        <a href="#" class="header-logo">
+            <img src="img/logo.png" alt="Maximals">
+        </a>
+        <nav class="header-nav">
+            <a href="#" class="header-nav__link">Услуги</a>
+            <a href="#" class="header-nav__link">Наши работы</a>
+            <a href="#" class="header-nav__link">Наши модели</a>
+            <a href="#" class="header-nav__link">О нас</a>
+            <a href="#" class="header-nav__link">Вакансии</a>
+            <a href="#" class="header-nav__link">Контакты</a>
+        </nav>
+        <div class="header-contacts">
+            <a href="#" class="header-contacts__link header-contacts__phone">8 800 123-65-54</a>
+            <a href="#" class="header-contacts__link header-contacts__callback">Заказать звонок</a>
+        </div>
+        <div class="header-text">
+            <h1 class="header-title">Проведем ваш <br>
+                праздник под ключ!</h1>
+            <span class="header-subtitle">Подберем любой персонал и организуем <br>
+                мероприятия любой сложности.</span>
+            <div class="header-buttons">
+                <a href="#" class="button">Заказать персонал</a>
+                <a href="#" class="link header-buttons__link">Узнать больше</a>
+            </div>
+            <div class="arrows">
+                <button class="arrow arrow__left">
+                    <p>
+                        <</p> </button> <button class="arrow arrow__right">
+                            <p>></p>
+                </button>
+            </div>
+            <div class="thumbs">
+                <a href="#" class="thumbs__link">Промоутеры</a>
+                <a href="#" class="thumbs__link">Промо модели</a>
+                <a href="#" class="thumbs__link">Стендистки</a>
+                <a href="#" class="thumbs__link">Консультанты</a>
+                <a href="#" class="thumbs__link">Хостес</a>
+            </div>
+        </div>
+    </header>
+    <section class="about-us">
+        <div class="about-us__text">
+            <h2 class="about-us__title">Кто мы такие?</h2>
+            <span class="about-us__subtitle">С 2006 года MAXIMALLLS активно занимается организацией бизнес-мероприятий
+                по системе M.I.C.E. Качество нашей работы отмечают зарубежные коллеги, нас ценят и уважают, нам доверяют
+                реализацию самых сложных с точки зрения организации проектов.
+            </span>
+        </div>
+        <div class="about-us__icon">
+            <div class="icon_item">
+                <div class="image-icon notepad"></div>
+                <span>10</span>
+                <p>лет <br> работы</p>
+            </div>
+            <div class="icon_item">
+                <div class="image-icon cremlin"></div>
+                <span>34</span>
+                <p>городов <br> присутствия</p>
+            </div>
+            <div class="icon_item">
+                <div class="image-icon rockets"></div>
+                <span>1011</span>
+                <p>проведено <br> мероприятий</p>
+            </div>
+            <div class="icon_item">
+                <div class="image-icon megaphon"></div>
+                <span>543</span>
+                <p>позитивных <br> промоутеров</p>
+            </div>
+        </div>
+        <div class="services-menu">
+            <h2>Наши услуги</h2>
+            <div class="services-menu__thumbs">
+                <a href="#">Промоутеры</a>
+                <a href="#">Промо модели</a>
+                <a href="#">Стендистки</a>
+                <a href="#">Консультанты</a>
+                <a href="#">Хостес</a>
+            </div>
+        </div>
+    </section>
+    <section class="promoters">
+        <div class="promoters__img"></div>
+        <div class="promoters__buttons">
+            <div class="text">
+                <h3>Наши <br> промоутеры:</h3>
+                <ul>
+                    <li>Позитивны и улыбчивы</li>
+                    <li>Не стоят на месте</li>
+                    <li>Всегда помогут!</li>
+                </ul>
+                <div class="header-buttons">
+                    <a href="#" class="button">Заказать промоутеров</a>
+                    <a href="#" class="link header-buttons__link">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="callback">
+        <div class="callback__wrapper">
+            <div class="callback__widget">
+                <h3 class="callback__title">Узнать стоимость акции</h3>
+                <form>
+                    <label for="name">Ваше имя <span>*</span></label>
+                    <input type="text" placeholder="Введите имя" name='name'>
+                    <label for="phone">Номер телефона<span>*</span></label>
+                    <input type="number" pattern='\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}'
+                        placeholder="Введите номер" name='phone'>
+                    <label for="city"> Ваш город <span>*</span> </label>
+                    <input type="text" placeholder="Введите название города" name='city'>
+                    <label for="event">Расскажите, какое мероприятие необходимо организовать</label>
+                    <textarea name="event" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                    <a href='#' class='submit'>Узнать стоимость</a>
+                    <img src="./img/phone.png" alt="">
+                </form>
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
+<footer class="footer">
+    <div class="footer-wrapper">
+        <div class="footer-menu">
+            <ul class='footer-menu__list'>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Наши модели</a></li>
+                <li><a href="#"> О нас</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-about">
+            <img src="./img/logo.png" alt="">
+            <span>8 800 123-65-54</span>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
